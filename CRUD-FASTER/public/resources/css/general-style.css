@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section#panel-izquierdo {
+    width: 30%;
+    height: 100%;
+    background-color: #dedede;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+}
+
+section#panel-derecho {
+    width: 70%;
+    height: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+#pasos-container {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+}
+
+#dinamic-msgs-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+/********************************************
+ *	PASO CONTAINER
+ */
+
+.paso-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paso-container h2 {
+    text-align: center;
+}
+
+/********************************************
+ *	PASO 1 CONTAINER
+ */
+
+#paso-1-container form {
+    width: 40%;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#paso-1-container form .contenedor-input {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#paso-1-container form .contenedor-input label {
+    margin-bottom: 8px;
+}
+
+/********************************************
+ *	PASO 2 CONTAINER
+ */
+
+#paso-2-container .sentences-display {
+    width: 50%;
+}
+
+#paso-2-container .sentence-container {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1F3F5;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#paso-2-container .sentence-container:nth-child(even) {
+    margin: 10px 0px;
+}

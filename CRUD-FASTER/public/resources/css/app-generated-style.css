@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    width: 95%;
+    height: 45%;
+    overflow: auto;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: arial, sans-serif;
+}
+
+td,
+th {
+    border: 1px solid #c5c5c5;
+    text-align: left;
+    padding: 8px;
+}
+
+.options-container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-put-to-update,
+.btn-delete {
+    width: 35px;
+    height: 35px;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.btn-put-to-update {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.btn-put-to-update:hover {
+    color: green;
+    background-color: transparent;
+}
+
+.btn-delete {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.btn-delete:hover {
+    color: red;
+    background-color: transparent;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.insert-box-container {
+    width: 50%;
+    height: 45%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-cancel-update {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-cancel-update:hover {
+    color: red;
+    background-color: transparent;
+}
+
+.input-container {
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-container label {
+    padding: 10px;
+}
+
+#btn-send-update {
+    cursor: pointer;
+    display: none;
+}
